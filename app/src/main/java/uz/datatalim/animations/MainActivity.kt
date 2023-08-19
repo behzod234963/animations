@@ -6,6 +6,8 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
+import com.airbnb.lottie.Lottie
+import com.airbnb.lottie.LottieAnimationView
 import com.skyfishjy.library.RippleBackground
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
 
+        val lottie:LottieAnimationView=findViewById(R.id.lottie)
         val btnRipple_main:Button=findViewById(R.id.ripple)
         val ivImage_main:ImageView=findViewById(R.id.ivImage_main)
         val btnZoom_main:Button=findViewById(R.id.btnZoom_main)
@@ -32,42 +35,42 @@ class MainActivity : AppCompatActivity() {
         btnZoom_main.setOnClickListener {
 
             val zoomIn=AnimationUtils.loadAnimation(this,R.anim.anim_zoom_in)
-            ivImage_main.startAnimation(zoomIn)
+            lottie.startAnimation(zoomIn)
 
         }
 
         btnRotate_main.setOnClickListener {
 
             val rotate=AnimationUtils.loadAnimation(this,R.anim.anim_rotate_clockwise)
-            ivImage_main.startAnimation(rotate)
+            lottie.startAnimation(rotate)
 
         }
 
         btnFade_main.setOnClickListener {
 
             val fadeIn=AnimationUtils.loadAnimation(this,R.anim.anim_fade_in)
-            ivImage_main.startAnimation(fadeIn)
+            lottie.startAnimation(fadeIn)
 
         }
 
         btnBlink_main.setOnClickListener {
 
             val blink=AnimationUtils.loadAnimation(this,R.anim.anim_blink)
-            ivImage_main.startAnimation(blink)
+            lottie.startAnimation(blink)
 
         }
 
         btnMove_main.setOnClickListener {
 
             val move=AnimationUtils.loadAnimation(this,R.anim.anim_move)
-            ivImage_main.startAnimation(move)
+            lottie.startAnimation(move)
 
         }
 
         btnSlide_main.setOnClickListener {
 
             val slideRight=AnimationUtils.loadAnimation(this,R.anim.anim_slide_right)
-            ivImage_main.startAnimation(slideRight)
+            lottie.startAnimation(slideRight)
 
         }
 

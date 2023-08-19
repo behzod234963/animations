@@ -21,8 +21,12 @@
                 android:src="@drawable/pic_car"
                 android:scaleType="centerCrop"/>
         <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
             android:layout_width="250dp"
-            android:layout_height="250dp"/>
+            android:layout_height="250dp"
+            app:lottie_loop="true"
+            app:lottie_fileName="loading.json"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
