@@ -76,15 +76,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnPlay.setOnClickListener {
 
-            var play=0
-            val pause=1
-            lottie.playAnimation()
-            play=2
-
-            if (play>0){
-
-                lottie.pauseAnimation()
-
+            var play=100
+            var pause=50
+            if (pause<100){
             }
 
         }
