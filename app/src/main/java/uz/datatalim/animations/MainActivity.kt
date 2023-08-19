@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
     private fun initViews() {
 
         val lottie:LottieAnimationView=findViewById(R.id.lottie)
-        val btnRipple_main:Button=findViewById(R.id.ripple)
+        val btnPlay:Button=findViewById(R.id.btnPlay)
+        val btnPause:Button=findViewById(R.id.btnPause)
         val ivImage_main:ImageView=findViewById(R.id.ivImage_main)
         val btnZoom_main:Button=findViewById(R.id.btnZoom_main)
         val btnRotate_main:Button=findViewById(R.id.btnRotate_main)
@@ -71,6 +72,25 @@ class MainActivity : AppCompatActivity() {
 
             val slideRight=AnimationUtils.loadAnimation(this,R.anim.anim_slide_right)
             lottie.startAnimation(slideRight)
+
+        }
+        btnPlay.setOnClickListener {
+
+            var play=0
+            val pause=1
+            lottie.playAnimation()
+            play=2
+
+            if (play>0){
+
+                lottie.pauseAnimation()
+
+            }
+
+        }
+
+        btnPause.setOnClickListener {
+
 
         }
 

@@ -122,14 +122,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:orientation="horizontal">
             <Button
-                android:id="@+id/ripple"
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                app:backgroundTint="@null"
+                android:layout_weight="1"
+                android:text="play"
+                android:background="@drawable/bg_btn"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnPause"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
                 app:backgroundTint="@null"
                 android:layout_weight="1"
-                android:text="RIPPLE"
+                android:text="pause"
                 android:background="@drawable/bg_btn"
                 android:layout_marginHorizontal="5dp"
                 android:textSize="18sp"
